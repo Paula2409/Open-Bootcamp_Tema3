@@ -11,7 +11,7 @@ public class Main
 	}
 }
 /* Creamos la clase Coche */
-public class Coche{
+class Coche{
     int puerta;
     int nuevaPuerta;
 
