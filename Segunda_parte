@@ -1,7 +1,7 @@
 public class Main
 {
     int puerta;
-    int nuevaPuerta;
+
 
     public static void main(String[] args) {
 		Coche unCoche = new Coche();
@@ -13,7 +13,13 @@ public class Main
 /* Creamos la clase Coche */
 class Coche{
     int puerta;
-    int nuevaPuerta;
+    
+/*Metodo Constructor */
+
+    public Coche(){
+        puerta = 2;
+
+    }
 
 /* Metodos para aplicar cantidad de puertas actual y agregar nuevas. */
     public void puerta(int puerta){
