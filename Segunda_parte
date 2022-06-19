@@ -4,35 +4,22 @@ public class Main
 
 
     public static void main(String[] args) {
-		Coche unCoche = new Coche();
-        unCoche.puerta(1);
-        unCoche.agregarPuerta();
-        System.out.println(unCoche.cantidadPuertas());
-	}
+		Coche unCoche = new Coche(2);
+        System.out.println(unCoche.agregarPuerta());
+    }
 }
-/* Creamos la clase Coche */
+/* Creamos la clase Coche. */
 class Coche{
     int puerta;
-    
-/*Metodo Constructor */
 
-    public Coche(){
-        puerta = 2;
 
-    }
-
-/* Metodos para aplicar cantidad de puertas actual y agregar nuevas. */
-    public void puerta(int puerta){
+    public Coche(int puerta){
         this.puerta = puerta;
-    
+
     }
 
-    public int cantidadPuertas() {
-        return this.puerta;
-    }    
 
-    public void agregarPuerta(){
-        this.puerta++;
-
+    public int agregarPuerta(){
+        return puerta = puerta + 1;
     }
 }
